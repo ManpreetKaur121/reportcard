@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+function ReportCard(name, rollno ,grade ,section,science,social,maths,eng,hindi){
+     this.name=name
+     this.roll_no= rollno
+     this.class=grade
+     this.section=section
+     this.marks=
+     {science :science,social:social,maths:maths,eng:eng,hindi:hindi
+      }
+
+
+ 
+ this.printReportCard=function(){
+    console.log(
+    `        ################################
+        #                              #
+        #         REPORT CARD          #
+        ################################
+      
+        #  Name     -  ${this.name}           #    
+        #  Class    -  ${this.class}               #
+        #  Roll_No  -  ${this.roll_no}               #
+        #  Section  -  ${this.section}               #
+        #  Science  -  ${this.marks.science}              #
+        #  Social   -  ${this.marks.social}              #
+        #  Maths    -  ${this.marks.maths}              #
+        #  English  -  ${this.marks.eng}              #
+        #  Hindi    -  ${this.marks.hindi}              #
+        ################################
+   ` )
+ }
+//  this.printTopThree=function(){
+    // let max=-Infinity
+    // for(i=0;i<this.marks.length;i++){
+        // for(let key in this.marks){
+        // if(max<this.marks[i]){
+            // max=this.marks[i].key
+        // }
+    
+    }
+
+
+let s1=new ReportCard("Tarun","X",4,"B",95,89,94,88,97)
+
+s1.printReportCard()
+
+</script>
